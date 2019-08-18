@@ -1,0 +1,30 @@
+{
+  "name": "retry-request",
+  "version": "1.0.0",
+  "description": "retry request while request failed",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingsonCai/retry-request.git"
+  },
+  "keywords": [
+    "retry",
+    "request"
+  ],
+  "author": "kingson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kingsonCai/retry-request/issues"
+  },
+  "homepage": "https://github.com/kingsonCai/retry-request#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  }
+}

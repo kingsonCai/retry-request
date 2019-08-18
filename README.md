@@ -48,11 +48,11 @@ let retryOptions = {retryIntervals:[100, 200, 300], msg:`baidu request`};
 
 
 let retryHook = {
-  // 正常响应时是否重连的判断条件
+  // 正常响应时是否重试的判断条件
   responseRetry:(response)=>{
     return false;
   },
-  // 捕捉异常时是否重连的判断条件
+  // 捕捉异常时是否重试的判断条件
   catchErrRetry:(err)=> {
     return true;
   }
