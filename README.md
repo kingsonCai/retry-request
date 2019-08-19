@@ -1,4 +1,4 @@
-### retry-request使用说明：
+### retry-request-promise使用说明：
 #### 应用场景：
 设计的初衷是为了保证高可靠和高可用，在网络请求有极小概率会失败，但又希望保证不失败，或减少失败概率的情况下推荐使用，
 调用方可以灵活设置重试间隔和重试次数，以及定义钩子函数判断是否要发起重试，重试过程对调用方来说是透明的。
@@ -7,7 +7,7 @@
 
 #### 安装：
 ```
-npm install retry-request
+npm install retry-request-promise
 ```
 
 #### 接口说明：
@@ -34,7 +34,7 @@ retryHook:
 
 #### 使用示例：
 ```
-const {request} = require('retry-request');
+const {request} = require('retry-request-promise');
 
 let requestOptions = {
   method:'get',
@@ -79,7 +79,7 @@ requestPromise(requestOptions).then((response)=>{
 
 #### 定义第三方请求方法测试代码示例：
 ```
-const {request} = require('retry-request');
+const {request} = require('retry-request-promise');
 
 function promiseReqFunc(reqOptions) {
   return new Promise((resolve, reject) => {

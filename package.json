@@ -1,5 +1,5 @@
 {
-  "name": "retry-request",
+  "name": "retry-request-promise",
   "version": "1.0.0",
   "description": "retry request while request failed",
   "main": "index.js",
@@ -17,7 +17,7 @@
     "retry",
     "request"
   ],
-  "author": "kingson",
+  "author": "caijinsheng",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kingsonCai/retry-request/issues"
